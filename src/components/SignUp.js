@@ -16,11 +16,17 @@ import instaLogo from '../Assests/Instagram.jpg'
 export default function SignUp() {
     const useStyles = createUseStyles({
         text1 : {
-            color :'grey' 
+            color :'grey',
+            textAlign : 'center',
+            marginTop : '3%' 
         } ,
         buttonMargin :{
             marginTop: '4%'
+        } , 
+        card2:{
+            marginTop : '5%'
         }
+
     })
 
     const classes = useStyles()
@@ -47,11 +53,22 @@ export default function SignUp() {
                         <Button color="primary" className={classes.buttonMargin} variant='outlined' fullWidth={true} size='small' component="label" > Upload Profile Picture
                            <input type='file' accept='image/*' hidden/> 
                         </Button>
+
+                        <Typography variant='subtitle1' className={classes.text1} margin="dense">
+            By signing up, you agree to our Terms , Privacy Policy and Cookies Policy .
+            </Typography>
                     </CardContent>
                     <CardActions>
-                        <Button size="small">Share</Button>
-                        <Button size="small">Learn More</Button>
+                    <Button  variant="contained" fullWidth={true}>Sign Up</Button>
                     </CardActions>
+                    
+                </Card>
+                <Card>
+                <Card sx={{ maxWidth: 345 }} className={classes.card2}>
+              <Typography>
+                     Have an Account? Log in
+              </Typography>
+        </Card>
                 </Card>
             </div>
         </div>
