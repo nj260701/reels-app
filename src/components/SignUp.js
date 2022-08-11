@@ -6,7 +6,7 @@ import Alert from '@mui/material/Alert';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import TextField from '@mui/material/TextField';
-
+import { Link } from 'react-router-dom';
 
 import './SignUp.css'
 import {createUseStyles} from 'react-jss'
@@ -65,7 +65,7 @@ export default function SignUp() {
                 <Card>
                 <Card sx={{ maxWidth: 345 }} className={classes.card2}>
               <Typography>
-                     Have an Account? Log in
+                     Have an Account? <Link to='/login' style={{textDecoration : 'none'}}>Log in</Link>
               </Typography>
         </Card>
                 </Card>

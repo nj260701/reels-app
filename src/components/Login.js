@@ -8,6 +8,7 @@ import Alert from '@mui/material/Alert';
 import TextField from '@mui/material/TextField';
 
 import { createUseStyles } from 'react-jss'
+import { Link } from "react-router-dom";
 
 import instaLogo from '../Assests/Instagram.jpg'
 import insta from '../Assests/insta.png'
@@ -117,7 +118,7 @@ export default function SignUp() {
 
                 <Card sx={{ maxWidth: 345 }} className={classes.card2}>
                     <Typography>
-                        New User? Sign up
+                        New User? <Link to ='/' style={{textDecoration : 'none'}} >Sign up</Link>
                     </Typography>
                 </Card>
             </div>
